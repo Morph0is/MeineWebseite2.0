@@ -13,7 +13,18 @@ body {
   font-family: 'Roboto', sans-serif, 'Montserrat', sans-serif, 'Open Sans', sans-serif;
 }
 
-
+h1{
+  font-weight: 300;
+}
+h3{
+  font-weight: 400;
+}
+h4{
+  font-weight: 400;
+}
+p{
+  font-weight: 300;
+}
   /*Ladefenster*/
   #ladebildschirm {
     position: fixed;
@@ -159,6 +170,7 @@ a{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
 }
 
 #video-container video {
@@ -185,6 +197,15 @@ a{
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+ #video-container {
+    height: 100vh;
+    width: 100%;
+  }
+
+}
+
+
 
 
 /*Über mich*/
@@ -193,25 +214,34 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 37px 5px rgba(0,0,0,0.23);
 }
 
-.card {
-  width: 30%;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex; 
-  flex-direction: column; 
-  justify-content:center; 
+h3{
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .card-image {
   width: 100px; /* Beispielwert - Passe dies entsprechend an */
   height: 100px; /* Beispielwert - Passe dies entsprechend an */
   object-fit: cover;
   border-radius: 50%; /* Kreisform */
-  margin: 20px auto 0 auto;
+  margin: 8px;
 }
 
 .card-content {
@@ -230,48 +260,35 @@ a{
 }
 
 .about-me {
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   width: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .about-me-container {
-    flex-direction: column;
-  }
-
-  .card,
-  .about-me {
-    width: 100%;
-  }
-
 .about-me p{
-  display: block;
-  padding: 15px;
-  text-align: left;
+  margin: 15px;
 }
 
-  .card {
-    flex-direction: row;
-  }
-  .card-image {
-    width: 100px; /* Beispielwert - Passe dies entsprechend an */
-    height: 100px; /* Beispielwert - Passe dies entsprechend an */
-    object-fit: cover;
-    border-radius: 50%; /* Kreisform */
-    margin: 25px;
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    width: 90%;
   }
 
   .card-content {
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    width: 100%;
   }
 
+  .about-me {
+    width: 100%;
+  }
 }
 
 /*Meine Fähigkeiten*/
 .skills {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding: 24px;
 }
@@ -340,6 +357,13 @@ ul {
   flex-direction: row;
   margin-top: 20px;
   width: 100%;
+  box-shadow: 5px 5px 37px 5px rgba(0,0,0,0.23);
+  padding: 30px;
+}
+
+h4{
+text-align: center;
+padding: 12px;
 }
 
 .project-image{
@@ -348,43 +372,126 @@ ul {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 37px 5px rgba(0,0,0,0.23);
   display: flex; 
   flex-direction: column; 
   justify-content:center; 
 }
 
 .project-title {
-  margin-top: 0;
+  padding-top: 40px;
   text-align: center;
+}
+
+.project-content{
+  width:50%;
+  margin: 15px;
 }
 
 .project-description{
   display: block;
-  padding: 15px;
   text-align: left;
+  padding: 15px;
+  font-weight: 300;
+}
+
+.programm-link{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f9f9f9;
+  background-color: #262626;
+  width: 80px;
+  margin-top: 20px;
+  border-radius: 18px;
+  padding: 8px;
+  transition: 1.5s ease-in-out;
+}
+
+.programm-link:hover{
+  background-color: red;
+  color: #f9f9f9;
 }
 
 @media screen and (max-width: 768px) {
   .project-container {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
-  .project-image{
-    width: 300px;
-    height:300px;
-   
+  .project-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
-  .project-title {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  .project-description{
-    display: block;
-    padding: 15px;
-    text-align: left;
+  .project-content {
     width: 100%;
   }
+
+  .project-description {
+    margin: 10px 0;
+  }
 }
+
   
+/*Fusszeile*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  background-color: black;
+  color: white;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.linkedin-icon {
+  background-color: #0077B5;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.github-icon {
+  background-color: #262626;
+  padding: 8px;
+  border-radius: 50%;
+}
+
