@@ -1,8 +1,8 @@
-// Ladefenster
 window.addEventListener("load", function() {
   var ladebildschirm = document.getElementById("ladebildschirm");
-  ladebildschirm.style.display = "none";
+  ladebildschirm.classList.add("hidden");
 });
+
 
 
 // Hamburger Menü
@@ -21,6 +21,14 @@ closeMenuItems.forEach((item) => {
     navMenu.classList.remove("active");
   });
 });
+
+window.addEventListener("click", (event) => {
+  if (!event.target.closest(".nav-menu") && !event.target.closest(".hamburger")) {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+});
+
 
 
 
