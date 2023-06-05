@@ -8,29 +8,20 @@ window.addEventListener("load", function() {
 // Hamburger Menü
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const closeMenuItems = document.querySelectorAll(".close-menu");
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener("click", (event) => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
+closeMenuItems.forEach((item) => {
+  item.addEventListener("click", (event) => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   });
 });
 
-document.addEventListener("click", (event) => {
-  const targetElement = event.target;
-  if (
-    !targetElement.closest(".nav-menu") &&
-    !targetElement.closest(".hamburger")
-  ) {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  }
-});
 
 
 

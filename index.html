@@ -24,17 +24,22 @@
         <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="\" class="nav-link close-menu">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Über mich</a>
+                                <a href="#about-me-link" class="nav-link close-menu">Über mich</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">Downloads</a>
-                                            </li>
-                </ul>
-              
-              </ul>
+                                      <a href="#project-link" class="nav-link close-menu">Projekte</a>
+                                          </li>
+                                    <li class="nav-item dropdown">
+                                      <a href="#" class="nav-link">Downloads</a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-link close-menu" href="/files/LANDRY  RUTALANDWA CV.pdf">CV</a></li>
+                                        <li><a class="dropdown-link close-menu" href="/files/Noten.pdf">Schul-Noten</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
               <div class="hamburger">
                   <span class="bar"></span>
                   <span class="bar"></span>
@@ -61,7 +66,7 @@
 <main>
 
   <!-- Mein Profil -->
-  <div class="about-me-container">
+  <div id="about-me-link" class="about-me-container">
     <div class="card">
       <img src="/image/DSC09277.jpg" alt="Bild" class="card-image">
       <div class="card-content">
@@ -74,6 +79,7 @@
     
     <!-- Über mich -->
   <div class="about-me">
+   
     <h4>Über mich</h4>
     <p>Ich bin Landry, eine motivierte und engagierte Person, 
       die eine Ausbildung in Softwareentwicklung EFZ an der Benedict 
@@ -130,7 +136,7 @@
 </div>
 
 <!-- Meine Projekte -->
-
+<div  id="project-link" class="project-box">
 <h3 class="project-title">Aktuelle Projekte</h3>
 
 <div class="project-container">
@@ -141,7 +147,7 @@
     Im Auftrag einer guten Freundin erstelle ich für Ihren Beauty-Salon eine neue Webseite,
     da die alte Webseite etwas in die Jahre gekommen ist. Schwerpunkt soll ein modernes Design sein und die 
   Möglichkeit Termine online buchen zu können. </p>
-  <a class="programm-link" href="#">GitHub</a>
+  <a class="programm-link" href="https://github.com/Morph0is/HomePageHast">GitHub</a>
 </div>
 </div>
 
@@ -153,7 +159,7 @@
     <h4>Gallerie Java</h4>
     <p class="project-description"> Dies ist ein Schulprojekt, das wir nach den Regeln der agilen Scrum-Methode entwickelt haben.
     Eine Bilder Gallerie auf der die Bilder in einem SQL-Server gespeichert, abegrufen und gelöscht werden können. </p>
-    <a class="programm-link" href="#">GitHub</a>
+    <a class="programm-link" href="https://github.com/Morph0is/Gallery">GitHub</a>
   </div>
 </div>
 
@@ -164,16 +170,17 @@
     <p class="project-description">Simulation in einem Parkhaus. In diesem Programm wird gezählt, wieviele Fahrzeuge ein und ausfahren (Besucher und Mieter).
     In den Einstellungen kann mann das Programm auf verschiedene Parkhäuser anpassen. 
   </p>
-  <a class="programm-link" href="#">GitHub</a>
+  <a class="programm-link" href="https://github.com/Morph0is/Parkhaus-CPP">GitHub</a>
   </div>
+</div>
 </div>
 
 </main>
 
 <footer class="footer">
   <ul class="social-media">
-    <li><a href="#" class="social-icon linkedin-icon"><i class="fab fa-linkedin"></i></a></li>
-    <li><a href="#" class="social-icon github-icon"><i class="fab fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/landry-rutalindwa-a95b0824b/" class="social-icon linkedin-icon"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://github.com/Morph0is" class="social-icon github-icon"><i class="fab fa-github"></i></a></li>
   </ul>
 </footer>
 
