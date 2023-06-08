@@ -147,6 +147,10 @@ a{
 
 .dropdown-link {
   transition: transform 0.2s ease-in-out;
+  border-radius: 26px;
+  padding: 0.8rem;
+  width: 60%;
+  margin: auto;
 }
 
 .dropdown-link:hover {
@@ -156,13 +160,13 @@ a{
 .nav-item {
   width: 80px;
   padding: 10px;
-  border-radius: 1821px;
+  border-radius: 21px;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-item:hover {
-  background-color: rgb(74, 0, 232);
+  background-color: #333333;
   
 }
 
