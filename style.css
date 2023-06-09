@@ -309,13 +309,12 @@ a{
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: 5px 5px 37px 5px rgba(0,0,0,0.23);
+  box-shadow: 5px 1px 50px -1px rgba(0,0,0,0.26);
   width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
   padding-bottom: 20px;
-  padding-top: 2rem;
   background-color: #f4f4f4;
   
 }
@@ -359,14 +358,13 @@ h3{
 }
 
 .card-title {
-  margin-top: 0;
+  margin-top: 1rem;
   font-size: 25px;
   font-weight: bold;
   background: -webkit-linear-gradient(left, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 15px;
 }
 
 
@@ -527,8 +525,8 @@ ul {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3rem;
-  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .project-container {
@@ -564,7 +562,7 @@ padding: 12px;
 }
 
 .project-title {
-  padding-top: 20px;
+  padding-top: 1rem;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
@@ -617,7 +615,8 @@ padding: 12px;
   bottom: -1rem; /* Abstand von unten hinzufügen */
   width: 70%;
   height: 1px;
-  background-color: black; /* Farbe der Linie anpassen */
+  background-color: black;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -656,7 +655,6 @@ padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background-color: black;
   color: white;
   height: 100px;
