@@ -458,7 +458,8 @@ p {
 }
 
 .skills-title {
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 1rem;
   font-size: 25px;
   font-weight: bold;
   background: -webkit-linear-gradient(left, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
@@ -494,6 +495,7 @@ ul {
   border-radius: 5px;
   overflow: hidden;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .cpp,
