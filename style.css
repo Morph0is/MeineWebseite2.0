@@ -116,7 +116,7 @@ a{
 
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* Positionierung unter dem Auslöser */
+  top: 100%; 
   left: 27rem;
   width: 200px;
   background-color: #262626;
@@ -209,7 +209,7 @@ a{
   left: -100%;
   top: 0px;
   padding-top: 5rem;
-  height: 60vh;
+  height: 75vh;
   gap: 0.5rem;
   flex-direction: column;
   width: 100%;
