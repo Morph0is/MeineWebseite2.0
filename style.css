@@ -471,6 +471,7 @@ p {
 .skills-row {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .skills-content {
@@ -517,6 +518,16 @@ ul {
     width: var(--progress);
   }
 }
+@media screen and (max-width: 768px) {
+  .skills {
+    width: 90%;
+  }
+  .skills-row {
+    flex-direction: column;
+  }
+ 
+}
+  
 
 
 
