@@ -30,8 +30,18 @@ window.addEventListener("click", (event) => {
 });
 
 
+//view beim scrollen.
+function scrollToTarget(event, yOffset = -130) {
+  event.preventDefault();
+  const targetId = event.target.getAttribute("href");
+  const targetElement = document.querySelector(targetId);
 
-
+  if (targetElement) {
+    const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+ 
 
 
 

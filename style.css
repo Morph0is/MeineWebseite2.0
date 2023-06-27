@@ -361,7 +361,7 @@ h3{
   margin-top: 1rem;
   font-size: 25px;
   font-weight: bold;
-  background: -webkit-linear-gradient(left, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
+  background: -webkit-linear-gradient(bottom, #643CCC 0%, #FF3883 59%, #fbb827 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -388,7 +388,7 @@ padding: 20px 20px 0 20px;
 .about-me-title{
   font-size: 25px;
   font-weight: bold;
-  background: -webkit-linear-gradient(left, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
+  background: -webkit-linear-gradient(bottom, #643CCC 0%, #FF3883 59%, #fbb827 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -462,7 +462,7 @@ p {
   margin-bottom: 1rem;
   font-size: 25px;
   font-weight: bold;
-  background: -webkit-linear-gradient(left, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
+  background: -webkit-linear-gradient(bottom, #643CCC 0%, #FF3883 59%, #fbb827 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -574,11 +574,12 @@ padding: 12px;
 }
 
 .project-title {
-  padding-top: 1rem;
+  padding: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
   font-size: 25px;
   font-weight: bold;
-  background: -webkit-linear-gradient(left, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
+  background: -webkit-linear-gradient(bottom, #643CCC 0%, #FF3883 59%, #fbb827 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
