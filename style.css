@@ -61,7 +61,6 @@ p{
     width: 50px;
     height: 50px;
     border: 5px solid;
-    border-image: linear-gradient(to right, #643CCC 0%, #FF3883 59%, #FF6D33 100%);
     border-image-slice: 1;
     border-radius: 50%;
     animation: spinner-rotation 1.5s linear infinite;
@@ -87,6 +86,7 @@ a{
   color: #fff;
   text-decoration: none;
 }
+
 
 /*Navigation*/
 .navbar {
@@ -170,10 +170,7 @@ a{
 
 .nav-item:hover {
   background-color: #333333;
-  
 }
-
-
 
 .hamburger{
   display: none;
@@ -190,20 +187,25 @@ a{
   background-color: #fff;
 }
 
+
 /*media query für navigation*/
 @media screen and (max-width: 768px){
 .hamburger {
     display: block;
 }
+
 .hamburger.active .bar:nth-child(2) {
     opacity: 0; 
 }
+
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+
 .nav-menu{
   position: fixed;
   left: -100%;
@@ -217,8 +219,6 @@ a{
   justify-content: start;
   font-weight: 900;
   border-radius: 0 0 26px 26px;
-  
-  
 }
 
 .nav-item{
@@ -227,10 +227,6 @@ a{
 
 .nav-menu.active{
   left: 0;
-}
-
-.navbar{
-  z-index: 1;
 }
 
 .dropdown-link {
@@ -251,12 +247,7 @@ a{
   background-color: transparent;
   padding-top: 1.5rem;
   top: 360px;
-  
-  
-  
-}
-
-
+  }
 }
 
 
@@ -303,24 +294,24 @@ a{
 
 
 
-
 /*Über mich*/
-.boxshadow{
+.aboutMeDiv{
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 5px 1px 50px -1px rgba(0,0,0,0.26);
   width: 70%;
+  max-width: 100em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
   padding-bottom: 20px;
   background-color: #f4f4f4;
-  
+  border-radius: 30px;
 }
 
 
-.about-me-container {
+.aboutMeSubDiv {
   display: flex;
   flex-direction: row;
 }
@@ -373,16 +364,15 @@ h3{
   bottom: 0;
 }
 
-.about-me {
+.aboutMe {
   margin-top: auto;
   text-align: left;
   width: 80%;
-  
 }
 
-.about-me p{
-margin:auto;
-padding: 20px 20px 0 20px;
+  .aboutMe p{
+  margin:auto;
+  padding: 20px 20px 0 20px;
 }
 
 .about-me-title{
@@ -410,13 +400,15 @@ p {
 
 
 @media (max-width: 768px) {
-  .boxshadow {
+  .aboutMeDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-radius: 0;
   }
-  .about-me-container {
+
+  .aboutMeSubDiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,13 +420,13 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    
-    
+
   }
 
-  .about-me {
+  .aboutMe {
     width: 100%;
   }
+
   .card{
     align-self: flex-start;
     flex-direction: row;
@@ -445,16 +437,13 @@ p {
 }
 
 
-
 /*Meine Fähigkeiten*/
 .skills {
   width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100em;
   text-align: center;
   padding: 24px;
-  margin-bottom: 6rem;
-  margin-top: 4rem;
+  margin: 4rem auto 6rem;
 }
 
 .skills-title {
@@ -527,8 +516,6 @@ ul {
   }
  
 }
-  
-
 
 
 /*Meine Projekte*/
@@ -536,10 +523,12 @@ ul {
 .project-box{
   box-shadow: 5px 1px 50px -1px rgba(0,0,0,0.26);
   width: 70%;
+  max-width: 100em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
   padding-bottom: 3rem;
+  border-radius: 30px;
 }
 
 .project-container {
@@ -634,10 +623,10 @@ padding: 12px;
 
 @media screen and (max-width: 768px) {
   .project-box{
-    
     width: 100%;
-    
+    border-radius: 0;
   }
+
   .project-container {
     flex-direction: column;
     padding: 0;
